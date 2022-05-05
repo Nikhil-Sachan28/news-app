@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:cardCornerRadius="5dp"
+        android:layout_alignParentTop="true"
+        android:elevation="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dateView"
+            android:alpha="0.8"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:id="@+id/date"
+                android:text="march 8, 2022"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:background="@color/teal_200"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/newsImageId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/some_pic" />
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_below="@+id/newsImageId"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/author"
+                android:layout_below="@+id/newsTitle"
+                android:text="Author: Harsh Sachan"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/icon30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/descriptionNews"
+                android:layout_below="@+id/author"
+                android:text="news goes here..."
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
