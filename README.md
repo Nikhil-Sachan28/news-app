@@ -1,3 +1,3 @@
-# news-app
-a online news app named informer where you can just scroll the screen and read recent news.
-if we need then we can modeify this app to show for example just sport news or just bussiness news.
+# Compact-News-app
+Informer is a news app that selects latest and best news from multiple national and international sources and summarises them to present in a short and crisp 60 words or less format, personalized for you
+A News app named where you can just scroll the screen and read recent news.
